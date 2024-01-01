@@ -40,9 +40,9 @@
   }
 
   .footer_container canvas {
-    background: red;
     margin-top: 5rem;
     margin-bottom: 5rem;
+    border: 4px solid var(--border-color);
   }
 
 }
