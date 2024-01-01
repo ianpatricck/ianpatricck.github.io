@@ -28,4 +28,21 @@
     width: 60%;
   }
 
+  footer {
+    display: block;
+  }
+
+  .footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0a0a0a;
+  }
+
+  .footer_container canvas {
+    background: red;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
 }
