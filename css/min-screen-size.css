@@ -191,6 +191,15 @@ main {
   width: 3.5rem;
 }
 
+footer {
+  display: none;
+  background: black;
+}
+
+.footer_container {
+  display: none;
+}
+
 @media (max-width: 290px) {
 
   .main_skills h1 {
@@ -199,6 +208,3 @@ main {
 
 }
 
-footer {
-  display: none;
-}
