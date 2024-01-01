@@ -1,0 +1,13 @@
+@keyframes profileSection {
+  from {
+    margin-top: 50vh;
+  } to {
+    margin-top: 10vh;
+  } 
+}
+
+.profile-section {
+  animation-name: profileSection;
+  animation-duration: .9s;
+}
+

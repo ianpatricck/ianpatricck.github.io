@@ -1,0 +1,161 @@
+/* Screen width: 700px */
+
+@media (min-width: 700px) {
+
+  .header_container_toggle, .main_description, .main_avatar {
+    display: none;
+  }
+
+  .main_aboutme span {
+    width: 40%;
+  }
+
+  .header_container_card-med {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--card-color-2);
+    border: 4px solid var(--border-color);
+    border-radius: 20px;
+    width: 80%;
+    padding: 5%;
+  }
+
+  .header_container_card_userdata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header_avatar_photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 12.5rem;
+    width: 12.5rem;
+    background-color: var(--border-color);
+    border-radius: 50%;
+  }
+
+  .header_avatar_photo img {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+  }
+
+  .header_container_card_userdata .card_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 1rem;
+    height: 8rem;
+    background-color: var(--card-links-color);
+    border-left: 5px solid darkgray;
+  }
+
+  .header_container_card_userdata .card_items li {
+    display: flex;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+  }
+
+  .header_container_card_userdata .card_items .item-disabled {
+    color: rgba(200, 200, 200, .7);
+  }
+
+  .header_container_card_userdata .card_items li a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .header_container_card_userdata .card_items li a:hover {
+    color: #ccc;
+  }
+
+  .header_container_card_userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 3rem;
+  }
+
+  .header_userinfo_description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .header_userinfo_description h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: white;
+  }
+
+  .header_userinfo_description small {
+    background-image: linear-gradient(30deg, #33ff77, #33cc33);    
+    background-clip: text;
+    color: transparent;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+  }
+
+  .header_userinfo_bio {
+    margin-top: 2.5vh;
+    text-align: right;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    width: 70%;
+
+  }
+
+  .main_skills_container {
+    width: 50%;
+  }
+
+}
+
+
+@media (min-width: 900px) {
+
+  .header_userinfo_description h1 {
+    font-size: 2.1rem;
+  }
+
+  .header_userinfo_description small {
+    font-size: 1.6rem;
+  }
+
+  .header_userinfo_bio {
+    font-size: 1.5rem;
+  }
+
+  .main_skills_container {
+    width: 40%;
+  }
+
+  .main_aboutme span {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (min-width: 1100px) {
+
+  .header_container {
+    margin-top: -20vh;
+  }
+
+  .header_container_card-med {
+    width: 60%;
+  }
+
+  .main_skills_container {
+    width: 30%;
+  }
+}

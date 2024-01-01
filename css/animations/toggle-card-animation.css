@@ -1,0 +1,105 @@
+@keyframes toggleCardOn {
+  from {
+    height: 0;
+  } to {
+    height: 25vh;
+  }
+}
+
+@keyframes toggleCardOff {
+  from {
+    height: 25vh;
+  } to {
+    height: 0;
+  }
+}
+
+.toggle-card-on {
+  height: 25vh;
+  animation-name: toggleCardOn;
+  animation-duration: 1s;
+}
+
+.toggle-card-off {
+  height: 0;
+  animation-name: toggleCardOff;
+  animation-duration: 1s;
+}
+
+@keyframes toggleCardItemsOn {
+  from {
+    display: none;
+    margin-left: 20vw;
+    opacity: 0;
+  } to {
+    display: flex;
+    opacity: 1;
+    margin-left: 2rem;
+  }
+}
+
+@keyframes toggleCardItemsOff {
+  from {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+
+    margin-left: 2vw;
+    opacity: .5;
+  } to {
+    margin-left: 20vw;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+  }
+}
+
+.toggle-card_items-on {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  justify-content: space-around;
+
+  margin-left: 2rem;
+  animation-name: toggleCardItemsOn;
+  animation-duration: 1s;
+}
+
+.toggle-card_items-off {
+  margin-left: 20vw;
+  display: none;
+  animation-name: toggleCardItemsOff;
+  animation-duration: .5s;
+}
+
+@keyframes toggleArrowOn {
+  from {
+    transform: rotate(0);
+  } to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes toggleArrowOff {
+  from {
+    transform: rotate(180deg);
+  } to {
+    transform: rotate(0);
+  }
+}
+
+.toggle-arrow-on {
+  transform: rotate(180deg);
+  animation-name: toggleArrowOn;
+  animation-duration: .5s;
+}
+
+.toggle-arrow-off {
+  transform: rotate(0);
+  animation-name: toggleArrowOff;
+  animation-duration: .5s;
+}
+

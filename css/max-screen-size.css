@@ -1,0 +1,31 @@
+/* Start screen: 1400px; */
+
+@media (min-width: 1400px) {
+
+  .main_userskills_group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+  }
+
+  .main_aboutme {
+    display: flex;
+    width: 50%;
+    margin-left: 15rem;
+  }
+  
+  .main_aboutme span {
+    width: 70%;
+  }
+
+  .main_skills {
+    width: 50%;
+    margin-top: 10rem;
+    margin-right: 15rem;
+  }
+
+  .main_skills_container {
+    width: 60%;
+  }
+
+}
