@@ -1,0 +1,342 @@
+.navbar_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6%;
+}
+
+.navbar_container__toggle {
+  height: 40px;
+  display: none;
+}
+
+.navbar_container_card-mobile_wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.navbar_container_card-mobile_wrapper_link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+.navbar_container_card-mobile_wrapper_link__icon {
+  height: 24px;
+}
+
+.navbar_container_card-mobile_wrapper_link__item {
+  margin-left: .5rem;
+}
+
+.navbar_container-desktop {
+  background-color: black;
+  border: 4px solid var(--secondary-color);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  padding: 5%;
+  margin-top: 3%;
+}
+
+.navbar_container-desktop_user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar_container-desktop_user_avatar {
+  width: 200px;
+  height: 200px;
+  padding: 1.2%;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+}
+
+.navbar_container-desktop_user_avatar__photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar_container-desktop_user_card {
+  margin-top: 2rem;
+  background-color: var(--primary-color);
+  border-left: 5px solid var(--quaternary-color);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar_container-desktop_user_card_wrapper {
+  display: flex;
+  margin: .5rem;
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+.navbar_container-desktop_user_card_wrapper:hover {
+  color: var(--quaternary-color);
+}
+
+.navbar_container-desktop_user_card_wrapper__icon {
+  height: 2.2vh;
+  margin-right: .5vw;
+}
+
+.navbar_container-desktop_user_card_wrapper__item {
+  font-size: 1.1rem;
+}
+
+.navbar_container-desktop_user_card_wrapper-disabled {
+  display: flex;
+  margin: .5rem;
+  text-decoration: none;
+  color: var(--quaternary-color);
+}
+
+.navbar_container-desktop_user_card_wrapper-disabled__icon {
+  height: 2.2vh;
+  margin-right: .5vw;
+}
+
+.navbar_container-desktop_user_card_wrapper-disabled__item {
+  font-size: 1.1rem;
+}
+
+.navbar_container-desktop_profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.navbar_container-desktop_profile_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.navbar_container-desktop_profile_info__name {
+  font-size: 2rem;
+  color: var(--tertiary-color);
+}
+
+.navbar_container-desktop_profile_info__occupation {
+  font-size: 1.4rem;
+  color: var(--quinary-color);
+}
+
+.navbar_container-desktop_profile_bio {
+  margin-top: 1.2rem;
+  width: 70%;
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: "Inter";
+  font-style: italic;
+  color: var(--tertiary-color);
+}
+
+.content {
+  background-color: black;
+  border-top: 4px solid var(--secondary-color);
+  margin-top: 5rem;
+}
+
+.content_info, .content_user {
+  display: none;
+}
+
+.content_description {
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+}
+
+.content_description_about {
+  width: 30%;
+  margin-right: 5%;
+}
+
+.content_description_about__title {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  color: var(--tertiary-color);
+}
+
+.content_description_about__bio {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  color: var(--tertiary-color);
+}
+
+.content_description_skills {
+  margin-top: 10rem;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
+}
+
+.content_description_skills__title {
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  color: var(--tertiary-color);
+}
+
+.content_description_skills_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 2rem;
+}
+
+.content_description_skills_container_item {
+  height: 60px;
+  width: 60px;
+  margin: .2rem;
+}
+
+.content_description_skills_container_item__icon {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.snake {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.snake_container {
+  border: 4px solid var(--secondary-color);
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 1080px) {
+
+  .navbar_container {
+    margin-top: 10rem;  
+  }
+
+  .navbar_container__toggle {
+    display: block;   
+    cursor: pointer;
+  }
+
+  .navbar_container-desktop {
+    display: none;
+  } 
+
+  .navbar_container_card-mobile {
+    flex-direction: column;
+    margin-top: 5rem;
+    background-color: black;
+    padding: 5%;
+    width: 100%;
+    border-top: 4px solid var(--secondary-color);
+  }
+
+  .content_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content_info_profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .content_info_profile__name {
+    font-size: 1.4rem;
+    margin-left: 4rem;
+    color: var(--tertiary-color);
+  }
+
+  .content_info_profile__occupation {
+    font-size: 1.2rem;
+    color: var(--quinary-color);
+  }
+
+  .content_info__bio {
+    width: 70%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Inter";
+    font-style: italic;
+    color: var(--quaternary-color);
+  }
+
+  .content_user {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content_user_avatar {
+    width: 200px;
+    height: 200px;
+    padding: 2%;
+    border-radius: 50%;
+  }
+
+  .content_user_avatar__photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .snake {
+    display: none;
+  }
+}
+
+@media (max-width: 690px) {
+  .content_description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content_description_about {
+    margin-top: 5rem;
+    width: 100%;
+  }
+
+  .content_description_about__title {
+    font-size: 1.1rem;
+  }
+
+  .content_description_about__bio {
+    font-size: 1rem;
+  }
+
+  .content_description_skills {
+    margin: 0;
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .content_description_skills__title {
+    font-size: 1rem;
+  }
+
+  .content_description_skills_container_item {
+    height: 40px;
+    width: 40px;
+  }
+
+}
