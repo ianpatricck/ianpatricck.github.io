@@ -144,20 +144,20 @@ const isGameOver = () => {
 // Show score in the screen
 const drawScore = () => {
   context.fillStyle = "white";
-  context.font = "30px Arial";  
+  context.font = "30px Inter";  
   context.fillText("Score " + score, canvas.width - 150, 40);
 }
 
 const startMessage = () => { 
   context.fillStyle = "#ebebeb";
-  context.font = "bold 60px Arial";
+  context.font = "bold 60px Inter";
   context.textAlign = "center";
   context.fillText("Press F to start", canvas.width / 2, canvas.height / 2);
 }
 
 const gameOverMessage = () => {
   context.fillStyle = "white";
-  context.font = "bold 80px Arial";
+  context.font = "bold 80px Inter";
   context.textAlign = "center";
   context.fillText("Game over!", canvas.width / 2, canvas.height / 2);
 }
