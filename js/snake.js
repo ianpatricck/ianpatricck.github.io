@@ -1,5 +1,6 @@
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
+const interFont = new FontFace("Inter", "url(../assets/fonts/Inter-Regular.ttf)");
 
 canvas.width = 800;
 canvas.height = 800;
@@ -211,5 +212,9 @@ document.body.addEventListener("keydown", (event) => {
 
 });
 
-drawSnakeGame();
+interFont.load().then(font => {
+  document.fonts.add(font);
+  drawSnakeGame();
+});
+
 
