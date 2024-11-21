@@ -1,3 +1,3 @@
-# Ian Patrick
-## :construction_worker: Uma Pequena página de apresentação 
+# @ Ian Patrick
+## :construction_worker: página dos projetos em desenvolvimento 
 
