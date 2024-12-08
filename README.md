@@ -1,2 +1,2 @@
-# @ Ian Patrick
+# Ian Patrick's portfolio
 
