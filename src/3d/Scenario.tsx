@@ -2,15 +2,15 @@ import React from "react";
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
-type CenaryProps = {
+type ScenarioProps = {
   position: { x: number; y: number; z: number };
 };
 
-export default function Cenary({ position }: CenaryProps) {
-  const cenary = useLoader(GLTFLoader, "/models/cenary.glb");
+export default function Scenario({ position }: ScenarioProps) {
+  const scenario = useLoader(GLTFLoader, "/models/scenario.glb");
   return (
     <mesh position={[position.x, position.y, position.z]}>
-      <primitive object={cenary.scene} />;
+      <primitive object={scenario.scene} />;
     </mesh>
   );
 }
