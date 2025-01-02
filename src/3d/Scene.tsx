@@ -1,4 +1,7 @@
-import { Environment, PerspectiveCamera } from "@react-three/drei";
+import {
+  Environment,
+  PerspectiveCamera,
+} from "@react-three/drei";
 import ThreeAmbient from "./Ambient";
 
 export default function Scene() {
@@ -7,7 +10,7 @@ export default function Scene() {
       {/* Main camera */}
       <PerspectiveCamera
         makeDefault
-        position={[-1.5, 4, -2.6]}
+        position={[-1.9, 4, -3.5]}
         rotation={[-0.7, -1, -0.6]}
       />
 
