@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("/fonts/roboto/roboto-regular-webfont.woff2") format("woff2"),
+    url("/fonts/roboto/roboto-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src:
+    url("/fonts/roboto/roboto-bold-webfont.woff2") format("woff2"),
+    url("/fonts/roboto/roboto-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src:
+    url("/fonts/roboto/roboto-light-webfont.woff2") format("woff2"),
+    url("/fonts/roboto/roboto-light-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Thin";
+  src:
+    url("/fonts/roboto/roboto-thin-webfont.woff2") format("woff2"),
+    url("/fonts/roboto/roboto-thin-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Thin";
+  src:
+    url("/fonts/roboto/roboto-thin-webfont.woff2") format("woff2"),
+    url("/fonts/roboto/roboto-thin-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Anton";
+  src:
+    url("/fonts/anton/anton-regular-webfont.woff2") format("woff2"),
+    url("/fonts/anton/anton-regular-webfont.woff") format("woff");
+}
