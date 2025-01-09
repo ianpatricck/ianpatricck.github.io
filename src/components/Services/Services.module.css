@@ -1,0 +1,16 @@
+.services {
+  margin-top: 2em;
+}
+
+.services__title {
+  font-size: 1.7em;
+  margin-bottom: 1em;
+}
+
+.services__title b {
+  color: var(--warning-color);
+}
+
+.services__title span {
+  font-family: "Roboto Bold";
+}

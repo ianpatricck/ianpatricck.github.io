@@ -1,0 +1,50 @@
+.presentation {
+  width: 100%;
+}
+
+.presentation__title {
+  font-size: 2.4em;
+  font-family: "Anton";
+  color: var(--primary-color);
+}
+
+.presentation__title b {
+  font-family: "Anton";
+  color: var(--text-color);
+}
+
+.presentation__subtitle {
+  display: flex;
+  margin-top: 1em;
+  border-top: 5px solid var(--primary-color);
+  border-image: linear-gradient(
+      to right,
+      var(--primary-color) 0%,
+      var(--secondary-color) 40%,
+      var(--warning-color) 100%
+    )
+    1;
+}
+
+.presentation__subtitle span {
+  padding-top: 0.5em;
+  font-size: 1.4em;
+  font-family: "Anton";
+  color: var(--gray-color);
+
+  background: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.presentation__subtitle span b {
+  padding-top: 0.5em;
+  font-family: "Anton";
+  color: var(--warning-color);
+}
