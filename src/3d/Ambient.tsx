@@ -1,3 +1,4 @@
+import { toDegree } from "../utils/toDegree";
 import Bookshelf from "./Objects/Bookshelf";
 import Chair from "./Objects/Chair";
 import Computer from "./Objects/Computer";
@@ -6,6 +7,7 @@ import Laptop from "./Objects/Laptop";
 import Monitor from "./Objects/Monitor";
 import Mouse from "./Objects/Mouse";
 import Scenario from "./Objects/Scenario";
+import Shelf from "./Objects/Shelf";
 import Table from "./Objects/Table";
 
 export default function ThreeAmbient() {
@@ -25,7 +27,7 @@ export default function ThreeAmbient() {
           z: -2.7,
         }}
         scale={0.3}
-        rotation={{ x: 0, y: -1.6, z: 0 }}
+        rotation={{ x: 0, y: toDegree(-90), z: 0 }}
       />
       <Chair
         position={{
@@ -34,7 +36,7 @@ export default function ThreeAmbient() {
           z: -1.4,
         }}
         scale={0.6}
-        rotation={{ x: 0, y: 1.9, z: 0 }}
+        rotation={{ x: 0, y: toDegree(120), z: 0 }}
       />
       <Monitor
         position={{
@@ -43,7 +45,7 @@ export default function ThreeAmbient() {
           z: -2.7,
         }}
         scale={0.6}
-        rotation={{ x: 0, y: 1.2, z: 0 }}
+        rotation={{ x: 0, y: toDegree(70), z: 0 }}
       />
       <Keyboard
         position={{
@@ -52,7 +54,7 @@ export default function ThreeAmbient() {
           z: -2.4,
         }}
         scale={0.6}
-        rotation={{ x: 0, y: -1.5, z: 0 }}
+        rotation={{ x: 0, y: toDegree(-80), z: 0 }}
       />
       <Mouse
         position={{
@@ -70,16 +72,7 @@ export default function ThreeAmbient() {
           z: -2.6,
         }}
         scale={0.3}
-        rotation={{ x: 0, y: -1.6, z: 0 }}
-      />
-      <Computer
-        position={{
-          x: 2.5,
-          y: 0.62,
-          z: -2.6,
-        }}
-        scale={0.3}
-        rotation={{ x: 0, y: -1.6, z: 0 }}
+        rotation={{ x: 0, y: toDegree(270), z: 0 }}
       />
       <Bookshelf
         position={{
@@ -88,7 +81,7 @@ export default function ThreeAmbient() {
           z: -1,
         }}
         scale={0.2}
-        rotation={{ x: 0, y: -3.17, z: 0 }}
+        rotation={{ x: 0, y: toDegree(180), z: 0 }}
       />
       <Laptop
         position={{
@@ -97,7 +90,16 @@ export default function ThreeAmbient() {
           z: -2.6,
         }}
         scale={0.18}
-        rotation={{ x: 0, y: -1.4, z: 0 }}
+        rotation={{ x: 0, y: toDegree(-75), z: 0 }}
+      />
+      <Shelf
+        position={{
+          x: 1.5,
+          y: 1.5,
+          z: -3.24,
+        }}
+        scale={0.3}
+        rotation={{ x: 0, y: toDegree(-90), z: 0 }}
       />
     </group>
   );
