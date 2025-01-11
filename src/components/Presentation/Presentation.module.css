@@ -16,7 +16,7 @@
 .presentation__subtitle {
   display: flex;
   margin-top: 1em;
-  border-top: 5px solid var(--primary-color);
+  border-top: 2px solid var(--primary-color);
   border-image: linear-gradient(
       to right,
       var(--primary-color) 0%,
