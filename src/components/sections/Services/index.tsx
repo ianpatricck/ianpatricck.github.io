@@ -1,11 +1,10 @@
+import Topic from "../../elements/Topic";
 import Style from "./Services.module.css";
 
 export default function Services() {
   return (
     <div className={Style.services}>
-      <h1 className={Style.services__title}>
-        <b>#</b> <span>O que eu faço?</span>
-      </h1>
+      <Topic>O que eu faço?</Topic>
 
       <section className={Style.services_wrapper}>
         <div className={Style.services_wrapper__card}>

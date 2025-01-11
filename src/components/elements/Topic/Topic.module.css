@@ -1,0 +1,13 @@
+.topic {
+  font-size: 1.7em;
+  margin-bottom: 1em;
+}
+
+.topic b {
+  color: var(--warning-color);
+}
+
+.topic span {
+  font-family: "Roboto Bold";
+}
+

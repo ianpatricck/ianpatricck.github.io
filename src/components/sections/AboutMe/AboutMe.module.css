@@ -1,0 +1,10 @@
+.about {
+  margin-top: 3em;
+}
+
+.about__description {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  color: var(--text-color);
+  font-family: "Roboto Light";
+}

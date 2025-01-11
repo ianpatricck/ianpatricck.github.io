@@ -1,11 +1,10 @@
+import Topic from "../../elements/Topic";
 import Style from "./AboutMe.module.css";
 
 export default function AboutMe() {
   return (
     <div className={Style.about}>
-      <h1 className={Style.about__title}>
-        <b>#</b> <span>Sobre mim</span>
-      </h1>
+      <Topic>Sobre mim</Topic>
 
       <p className={Style.about__description}>
         Com mais de 3 anos de experiência em desenvolvimento de web, sou
