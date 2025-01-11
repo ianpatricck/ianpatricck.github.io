@@ -1,5 +1,4 @@
 .services {
-  margin-top: 2em;
   margin-bottom: 5em;
 }
 
@@ -10,14 +9,15 @@
 
 .services_wrapper__card {
   margin: 0.2em;
-  background-color: #000000;
-  border-radius: 0.1em;
+  margin-top: 0.9em;
+  background-color: transparent;
+  border-radius: 1.5em;
 
   padding: 0.3em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: -2px -2px 0 var(--primary-color);
+  box-shadow: -5px -5px 0 var(--primary-color);
 }
 
 .services_wrapper__card img {
