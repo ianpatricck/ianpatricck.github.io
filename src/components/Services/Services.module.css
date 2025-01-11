@@ -1,5 +1,6 @@
 .services {
   margin-top: 2em;
+  margin-bottom: 5em;
 }
 
 .services__title {
@@ -13,4 +14,32 @@
 
 .services__title span {
   font-family: "Roboto Bold";
+}
+
+.services_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.services_wrapper__card {
+  margin: 0.2em;
+  background-color: #000000;
+  border-radius: .25em;
+
+  padding: 0.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -2px -2px 0 var(--primary-color);
+}
+
+.services_wrapper__card img {
+  height: 6em;
+}
+
+.services_wrapper__card p {
+  color: var(--primary-color);
+  padding: 0.5em;
+  font-family: "Roboto Bold";
+  text-align: center;
 }

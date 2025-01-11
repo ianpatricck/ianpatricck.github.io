@@ -7,17 +7,22 @@ export default function Services() {
         <b>#</b> <span>O que eu faço?</span>
       </h1>
 
-      <div>
-        <p>Desenvolvimento Front-End</p>
-      </div>
+      <section className={Style.services_wrapper}>
+        <div className={Style.services_wrapper__card}>
+          <img src="/images/frontend.svg" alt="Front-End" />
+          <p>Desenvolvimento Front-End</p>
+        </div>
 
-      <div>
-        <p>Desenvolvimento Back-End</p>
-      </div>
+        <div className={Style.services_wrapper__card}>
+          <img src="/images/backend.svg" alt="Back-End" />
+          <p>Desenvolvimento Back-End</p>
+        </div>
 
-      <div>
-        <p>Desenvolvimento Mobile</p>
-      </div>
+        <div className={Style.services_wrapper__card}>
+          <img src="/images/mobile.svg" alt="Mobile" />
+          <p>Desenvolvimento Mobile</p>
+        </div>
+      </section>
     </div>
   );
 }
