@@ -1,3 +1,10 @@
 .techs {
   margin-bottom: 5em;
 }
+
+.techs_wrapper {
+}
+
+.techs_wrapper img {
+  margin: .2em;
+}
