@@ -1,0 +1,10 @@
+.link {
+  font-size: 1.2em;
+  color: var(--warning-color);
+  font-family: "Roboto Light";
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--secondary-color);
+}
