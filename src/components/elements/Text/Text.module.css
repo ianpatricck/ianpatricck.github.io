@@ -1,0 +1,5 @@
+.link {
+  color: var(--text-color);
+  font-family: "Roboto Light";
+  text-decoration: none;
+}
