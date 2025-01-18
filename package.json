@@ -39,6 +39,7 @@
     "@react-three/drei": "^9.120.2",
     "@react-three/fiber": "^8.17.10",
     "@types/three": "^0.170.0",
+    "motion": "^11.18.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "three": "^0.171.0"
