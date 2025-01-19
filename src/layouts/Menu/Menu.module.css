@@ -1,0 +1,25 @@
+.menu {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  padding: 1em;
+}
+
+.menu__item {
+  margin-left: 1em;
+}
+
+.menu__item img {
+  height: 30px;
+  padding: 0.3em;
+  border-radius: 0.3em;
+  background-color: var(--background-color);
+  box-shadow: -3px 3px 0 var(--primary-color);
+}
+
+.menu__item img:hover {
+  box-shadow: -4px 4px 0 var(--secondary-color);
+  border-radius: 0.1em;
+  scale: 1.05;
+  transition-duration: 0.2s;
+}
