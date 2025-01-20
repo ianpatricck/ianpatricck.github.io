@@ -1,4 +1,5 @@
 import AboutMe from "../../components/sections/AboutMe";
+import Articles from "../../components/sections/Articles";
 import Presentation from "../../components/sections/Presentation";
 import Projects from "../../components/sections/Projects";
 import Services from "../../components/sections/Services";
@@ -13,6 +14,7 @@ export default function Sidebar() {
       <Services />
       <Projects />
       <Techs />
+      <Articles />
     </aside>
   );
 }
