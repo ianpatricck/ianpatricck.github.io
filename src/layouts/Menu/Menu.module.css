@@ -14,7 +14,7 @@
   padding: 0.3em;
   border-radius: 0.3em;
   background-color: var(--background-color);
-  box-shadow: -3px 3px 0 var(--primary-color);
+  box-shadow: -1.2px 1.2px 0 var(--text-color);
 }
 
 .menu__item img:hover {
