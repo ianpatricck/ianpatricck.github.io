@@ -1,7 +1,16 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Mesh } from "three";
+import { toDegree } from "../../utils/toDegree";
+
+/*
+ *  Vector Type
+ *
+ *  Tipo que representa um vetor em algumas propriedades
+ *  como 'position' ou 'rotation'.
+ *
+ */
 
 type Vector = {
   x: number;
@@ -9,41 +18,83 @@ type Vector = {
   z: number;
 };
 
+/*
+ *  LaptopProps
+ *
+ *  Tipo que as propriedades 'props' do componente laptop recebem.
+ *
+ */
+
 type LaptopProps = {
   position: Vector;
   scale: number;
   rotation: Vector;
 };
 
+/*
+ *  Componente Laptop
+ *
+ *  Componente principal que representa um objeto 3d.
+ *
+ */
+
 export default function Laptop({ position, scale, rotation }: LaptopProps) {
+  // Constante que carrega o modelo do objeto (glb).
   const laptop = useLoader(GLTFLoader, "/models/laptop.glb");
 
+  // Referência da malha do objeto
   const ref = useRef<Mesh>(null);
 
+  // Status a saber se o cursor do mouse pairou pelo objeto
   const [hovered, setHovered] = useState<boolean>(false);
-  const [currentScale, setCurrentScale] = useState<number>(scale);
-  const [currentRotation, setCurrentRotation] = useState<Vector>(rotation);
 
-  useFrame(({ clock }) => {
+  /*
+   *  Hook useFrame
+   *
+   *  ação para definir a lógica de uma animação se o usuário
+   *  pairou sobre o objeto.
+   *
+   */
+
+  useFrame(() => {
+    const delta = 0.025;
+
     if (hovered) {
-      document.body.style.cursor = hovered ? "pointer" : "auto";
-      setCurrentRotation({
-        x: rotation.x,
-        y: clock.getElapsedTime(),
-        z: rotation.z,
-      });
+      if (ref.current && ref.current.rotation.y > rotation.y - toDegree(40)) {
+        ref.current.rotation.y -= delta;
+      }
     } else {
-      setCurrentScale(scale);
-      setCurrentRotation({ x: rotation.x, y: currentRotation.y, z: rotation.z });
+      if (ref.current && ref.current.rotation.y <= rotation.y) {
+        ref.current.rotation.y += delta;
+      }
     }
   });
+
+  /*
+   *  Hook useEffect
+   *
+   *  Efeito necessário para alterar o cursor do mouse quando o usuário
+   *  pairar sobre o objeto.
+   *
+   */
+
+  useEffect(() => {
+    document.body.style.cursor = hovered ? "pointer" : "auto";
+  }, [hovered]);
+
+  /*
+   *  Retorno do mesh
+   *
+   *  Retorna uma malha e exibe o objeto importado dentro de <primitive>.
+   *
+   */
 
   return (
     <mesh
       ref={ref}
       position={[position.x, position.y, position.z]}
-      scale={currentScale}
-      rotation={[currentRotation.x, currentRotation.y, currentRotation.z]}
+      scale={scale}
+      rotation={[rotation.x, rotation.y, rotation.z]}
       onPointerOver={() => setHovered(true)}
       onPointerLeave={() => setHovered(false)}
     >
