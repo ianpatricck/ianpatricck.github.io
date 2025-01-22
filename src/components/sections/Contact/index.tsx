@@ -22,7 +22,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/ianpatricck/"
             target="_blank"
           >
-            github.com/ianpatricck
+            linkedin.com/in/ianpatricck
           </a>
         </li>
 
@@ -33,7 +33,7 @@ export default function Contact() {
             href="https://github.com/ianpatricck"
             target="_blank"
           >
-            linkedin.com/in/ianpatricck
+            github.com/ianpatricck
           </a>
         </li>
       </ul>
