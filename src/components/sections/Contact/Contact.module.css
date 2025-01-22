@@ -1,0 +1,34 @@
+.contact {
+  margin-bottom: 5em;
+}
+
+.contact_item {
+  display: flex;
+  color: var(--text-color);
+  font-size: 1.1em;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: var(--foreground-color);
+  border-radius: 0.25em;
+}
+
+.contact_item:hover {
+  scale: 1.01;
+  transition-duration: .2s;
+}
+
+.contact_item img {
+  height: 20px;
+}
+
+.contact_item__text {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 2em;
+  font-family: "Roboto Light";
+  font-style: italic;
+}
+
+.contact_item a:hover {
+  color: var(--warning-color);
+}
