@@ -1,24 +1,21 @@
-import {
-  Environment,
-  PerspectiveCamera,
-} from "@react-three/drei";
+import { Environment, PerspectiveCamera } from "@react-three/drei";
 import ThreeAmbient from "./Ambient";
 
 export default function Scene() {
   return (
     <>
-      {/* Main camera */}
+      {/* Câmera */}
       <PerspectiveCamera
         makeDefault
         position={[-1.9, 4, -3.5]}
         rotation={[-0.7, -1, -0.6]}
       />
 
-      {/* Cenary details */}
+      {/* Detalhes de ambiente */}
       <ambientLight intensity={1} />
       <Environment preset="sunset" />
 
-      {/* Main ambient */}
+      {/* Ambiente completo do Three.js */}
       <ThreeAmbient />
     </>
   );
