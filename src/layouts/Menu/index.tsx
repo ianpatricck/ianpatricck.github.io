@@ -1,5 +1,12 @@
 import Style from "./Menu.module.css";
 
+/*
+ *  Menu
+ *
+ *  Componente que lista outras redes no topo da página.
+ *
+ */
+
 export default function Menu() {
   const items = [
     {
