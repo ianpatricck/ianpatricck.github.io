@@ -5,6 +5,14 @@ import Scene from "./3d/Scene";
 import Sidebar from "./layouts/Sidebar";
 import Menu from "./layouts/Menu";
 
+/*
+ *  Componente principal da aplicação
+ *
+ *  Ponto de entrada para a exibição de layouts e
+ *  a cena do elemento Canvas.
+ *
+ */
+
 export default function App() {
   return (
     <Suspense fallback={null}>
