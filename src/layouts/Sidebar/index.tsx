@@ -7,6 +7,14 @@ import Services from "../../components/sections/Services";
 import Techs from "../../components/sections/Techs";
 import { sidebar } from "./Sidebar.module.css";
 
+/*
+ *  Sidebar
+ *
+ *  Layout que exibe todas as seções ao lado esquerdo
+ *  da página.
+ *
+ */
+
 export default function Sidebar() {
   return (
     <aside className={sidebar}>
