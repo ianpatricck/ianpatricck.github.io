@@ -2,10 +2,33 @@ import Link from "../../elements/Link";
 import Text from "../../elements/Text";
 import Topic from "../../elements/Topic";
 import Style from "./Services.module.css";
+import { motion } from "motion/react";
+
+/*
+ *  Componente dos serviços prestados
+ *
+ *  Mostra uma descrição detalhada sobre os trabalhos
+ *  que são realizados.
+ *
+ */
 
 export default function Services() {
   return (
-    <div className={Style.services}>
+    <motion.div
+      className={Style.services}
+      initial={{
+        y: 50,
+        opacity: 0,
+      }}
+      animate={{
+        y: 0,
+        transition: {
+          duration: 0.6,
+          ease: "easeInOut",
+        },
+      }}
+      whileInView={{ opacity: 1 }}
+    >
       <Topic>O que eu faço?</Topic>
 
       <section className={Style.services_wrapper}>
@@ -64,11 +87,11 @@ export default function Services() {
       <Text>
         Além de minha experiência com desenvolvimento web, também sou
         especializado em desenvolvimento mobile utilizando{" "}
-        <Link href="https://reactnative.dev/">React Native</Link>.
-        Com essa ferramenta, sou capaz de criar aplicativos nativos para iOS e
-        Android com uma única base de código, oferecendo uma excelente
-        performance e uma experiência de usuário impecável.
+        <Link href="https://reactnative.dev/">React Native</Link>. Com essa
+        ferramenta, sou capaz de criar aplicativos nativos para iOS e Android
+        com uma única base de código, oferecendo uma excelente performance e uma
+        experiência de usuário impecável.
       </Text>
-    </div>
+    </motion.div>
   );
 }
