@@ -1,10 +1,31 @@
 import Text from "../../elements/Text";
 import Topic from "../../elements/Topic";
 import Style from "./AboutMe.module.css";
+import { motion } from "motion/react";
+
+/*
+ *  Componente sobre o autor
+ *
+ *  Exibe uma descrição resumida sobre o autor.
+ *
+ */
 
 export default function AboutMe() {
   return (
-    <div className={Style.about}>
+    <motion.div
+      className={Style.about}
+      initial={{
+        x: -100,
+        opacity: 0,
+      }}
+      animate={{
+        transition: {
+          duration: 0.6,
+          ease: "easeIn",
+        },
+      }}
+      whileInView={{ opacity: 1, x: 0 }}
+    >
       <Topic>Sobre mim</Topic>
 
       <Text>
@@ -13,6 +34,6 @@ export default function AboutMe() {
         resolver problemas. Desenvolvi e fiz parte de projetos que envolviam
         desde UI até banco de dados.
       </Text>
-    </div>
+    </motion.div>
   );
 }
