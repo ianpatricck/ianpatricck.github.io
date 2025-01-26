@@ -29,13 +29,27 @@ export default function Presentation() {
         Olá, meu nome é <br />
         <b>Ian Patrick.</b>
       </h1>
-      <h2 className={Style.presentation__subtitle}>
+      <motion.h2
+        className={Style.presentation__subtitle}
+        initial={{
+          x: 100,
+          opacity: 0,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 0.3,
+            ease: "easeIn",
+          },
+        }}
+      >
         <span>
           <b>&lt;</b>
           Sou mais um pedreiro de código
           <b>/&gt;</b>
         </span>
-      </h2>
+      </motion.h2>
     </motion.div>
   );
 }
