@@ -1,10 +1,32 @@
 import React from "react";
 import Style from "./Contact.module.css";
 import Topic from "../../elements/Topic";
+import { motion } from "motion/react";
+
+/*
+ *  Componente Contact
+ *
+ *  Lista as principais redes de contato do autor.
+ *
+ */
 
 export default function Contact() {
   return (
-    <div className={Style.contact}>
+    <motion.div
+      className={Style.contact}
+      initial={{
+        opacity: 0,
+        y: 100,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 0.5,
+          ease: "easeOut",
+        },
+      }}
+    >
       <Topic>Minhas redes & Contato</Topic>
 
       <ul className={Style.contact_links}>
@@ -37,6 +59,6 @@ export default function Contact() {
           </a>
         </li>
       </ul>
-    </div>
+    </motion.div>
   );
 }
