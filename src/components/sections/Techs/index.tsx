@@ -1,7 +1,17 @@
 import Topic from "../../elements/Topic";
 import Style from "./Techs.module.css";
+import { motion } from "motion/react";
+
+/*
+ *  Componente das tecnologias
+ *
+ *  Exibe um container de tecnologias e ferramentas
+ *  nas quais o autor possui proficiência.
+ *
+ */
 
 export default function Techs() {
+  // Lista de habilidades que o autor possui.
   const mystack: string[] = [
     "c",
     "cpp",
@@ -53,7 +63,11 @@ export default function Techs() {
   ];
 
   return (
-    <div className={Style.techs}>
+    <motion.div
+      className={Style.techs}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1, transition: { duration: 1 } }}
+    >
       <Topic>Conhecimentos técnicos</Topic>
 
       <div className={Style.techs_wrapper}>
@@ -65,6 +79,6 @@ export default function Techs() {
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
