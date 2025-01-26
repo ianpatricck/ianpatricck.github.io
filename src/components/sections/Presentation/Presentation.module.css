@@ -28,8 +28,9 @@
 
 .presentation__subtitle span {
   padding-top: 0.5em;
-  font-size: 1.4em;
-  font-family: "Anton";
+  padding-bottom: 0.5em;
+  font-family: "Dancing Script", serif;
+  font-size: 1.8em;
   color: var(--gray-color);
 
   background: linear-gradient(
@@ -45,6 +46,6 @@
 
 .presentation__subtitle span b {
   padding-top: 0.5em;
-  font-family: "Anton";
+  font-family: "Dancing Script", serif;
   color: var(--warning-color);
 }
