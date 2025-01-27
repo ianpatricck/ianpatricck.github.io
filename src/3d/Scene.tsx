@@ -1,6 +1,11 @@
 import { Environment, PerspectiveCamera } from "@react-three/drei";
 import ThreeAmbient from "./Ambient";
 
+/*
+ *  Componente da cena principal
+ *
+ */
+
 export default function Scene() {
   return (
     <>
