@@ -4,6 +4,27 @@ import { Suspense } from "react";
 import Scene from "./3d/Scene";
 import Sidebar from "./layouts/Sidebar";
 import Menu from "./layouts/Menu";
+import { motion } from "motion/react";
+
+/*
+ *  Componente de carregamento
+ *
+ *  Exibe um simples elemente sinalizando que os componentes estão
+ *  carregando.
+ *
+ */
+
+function AppLoading() {
+  return (
+    <div className={AppModule.loading}>
+      <motion.div
+        className={AppModule.loading__element}
+        animate={{ y: [0, -50, 0] }}
+        transition={{ duration: 1.2, repeat: Infinity }}
+      ></motion.div>
+    </div>
+  );
+}
 
 /*
  *  Componente principal da aplicação
@@ -15,14 +36,14 @@ import Menu from "./layouts/Menu";
 
 export default function App() {
   return (
-    <Suspense fallback={null}>
-      <div className={AppModule.wrapper}>
+    <div className={AppModule.wrapper}>
+      <Suspense fallback={<AppLoading />}>
         <Sidebar />
         <Menu />
         <Canvas>
           <Scene />
         </Canvas>
-      </div>
-    </Suspense>
+      </Suspense>
+    </div>
   );
 }
