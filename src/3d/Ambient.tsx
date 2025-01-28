@@ -10,6 +10,13 @@ import Scenario from "./Objects/Scenario";
 import Shelf from "./Objects/Shelf";
 import Table from "./Objects/Table";
 
+/*
+ *  Componente do ambiente
+ *
+ *  Retorna todos os objetos dispostos dentro do ambiente.
+ *
+ */
+
 export default function ThreeAmbient() {
   return (
     <group scale={2}>
