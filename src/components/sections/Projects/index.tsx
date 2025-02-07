@@ -1,3 +1,4 @@
+import { useModal } from "../../../context/ModalContext";
 import ProjectItem from "../../elements/ProjectItem";
 import Topic from "../../elements/Topic";
 import Style from "./Projects.module.css";
@@ -11,6 +12,9 @@ import { motion } from "motion/react";
  */
 
 type ProjectCardProps = {
+  repo?: string;
+  url?: string;
+  background: string;
   image: string;
   title: string;
   description: string;
@@ -23,7 +27,26 @@ type ProjectCardProps = {
  *
  */
 
-function ProjectCard({ image, title, description }: ProjectCardProps) {
+function ProjectCard({
+  repo,
+  url,
+  background,
+  image,
+  title,
+  description,
+}: ProjectCardProps) {
+  const { setIsOpen, setContent } = useModal();
+
+  function handleModal() {
+    setContent({
+      repo: repo,
+      url: url,
+      image: background,
+    });
+
+    setIsOpen(true);
+  }
+
   return (
     <motion.div
       initial={{ x: -50 }}
@@ -34,6 +57,7 @@ function ProjectCard({ image, title, description }: ProjectCardProps) {
         },
       }}
       whileInView={{ x: 0 }}
+      onClick={() => handleModal()}
     >
       <ProjectItem image={image}>
         <motion.div
@@ -83,6 +107,7 @@ export default function Projects() {
 
       <section className={Style.projects_wrapper}>
         <ProjectCard
+          background="/images/vanguarda.png"
           image="/images/cover-vanguarda.svg"
           title="Construtora Vanguarda"
           description="Site institucional desenvolvido para a Construtora Vanguarda,
@@ -93,6 +118,9 @@ export default function Projects() {
               contemporâneo."
         />
         <ProjectCard
+          repo="https://github.com/ianpatricck/challenge-burgers-restaurant"
+          url="https://challenge-burgers-restaurant.vercel.app"
+          background="/images/burgers.png"
           image="/images/cover-burgers.svg"
           title="Burgers restaurant"
           description="Burgers restaurant, plataforma web e intuitiva para escolha e
