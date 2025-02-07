@@ -1,0 +1,54 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.modal__item {
+  background-color: var(--foreground-color);
+  width: 80%;
+  height: 80%;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  scrollbar-color: var(--warning-color) var(--background-color);
+  scrollbar-width: thin;
+}
+
+.modal__item header {
+  display: flex;
+  position: fixed;
+  padding: 1.3em;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--text-color);
+  margin-right: 3em;
+  font-family: "Roboto Light";
+  font-size: 0.9em;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.modal__link img {
+  height: 25px;
+  margin-right: 1em;
+}
+
+.modal__background {
+  width: 100%;
+}
