@@ -8,6 +8,20 @@ import {
 } from "react";
 
 /*
+ *  Tipagem do conteúdo do modal
+ *
+ *  Define qual o conteúdo o modal apresentará, sendo composto
+ *  pela imagem, o repositório e o link do projeto.
+ *
+ */
+
+export type ModalContent = {
+  image: string;
+  repo?: string;
+  url?: string;
+};
+
+/*
  *  Tipagem do context do modal
  *
  *  Tipo que define a forma do modal, sendo composto
@@ -18,6 +32,8 @@ import {
 type ModalContextType = {
   isOpen: boolean;
   setIsOpen: Dispatch<SetStateAction<boolean>>;
+  content: ModalContent;
+  setContent: Dispatch<SetStateAction<ModalContent>>;
 };
 
 /*
@@ -39,9 +55,14 @@ const ModalContext = createContext<ModalContextType | null>(null);
 
 export function ModalProvider({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [content, setContent] = useState<ModalContent>({
+    image: "",
+    repo: "",
+    url: "",
+  });
 
   return (
-    <ModalContext.Provider value={{ isOpen, setIsOpen }}>
+    <ModalContext.Provider value={{ isOpen, setIsOpen, content, setContent }}>
       {children}
     </ModalContext.Provider>
   );
