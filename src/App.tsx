@@ -5,6 +5,8 @@ import Scene from "./3d/Scene";
 import Sidebar from "./layouts/Sidebar";
 import Menu from "./layouts/Menu";
 import { motion } from "motion/react";
+import Modal from "./layouts/Modal";
+import { useModal } from "./context/ModalContext";
 
 /*
  *  Componente de carregamento
@@ -35,9 +37,13 @@ function AppLoading() {
  */
 
 export default function App() {
+  const { isOpen } = useModal();
+
   return (
     <div className={AppModule.wrapper}>
       <Suspense fallback={<AppLoading />}>
+        {isOpen ? <Modal /> : null}
+
         <Sidebar />
         <Menu />
         <Canvas>
