@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Style from "./Modal.module.css";
 import { useClickOutside } from "../../hooks/useClickOutside";
 import { useModal } from "../../context/ModalContext";
+import { motion } from "motion/react";
 
 function ModalHeader({ repo, url }: { repo?: string; url?: string }) {
   return (
@@ -36,7 +37,11 @@ export default function Modal() {
   });
 
   return (
-    <div className={Style.modal}>
+    <motion.div
+      initial={{ opacity: 0, bottom: 100 }}
+      animate={{ opacity: 1, bottom: 0, transition: { duration: 0.4 } }}
+      className={Style.modal}
+    >
       <div ref={ref} className={Style.modal__item}>
         <ModalHeader repo={content.repo} url={content.url} />
 
@@ -46,6 +51,6 @@ export default function Modal() {
           alt="Background"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
