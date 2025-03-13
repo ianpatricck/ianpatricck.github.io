@@ -29,10 +29,9 @@ export default function AboutMe() {
       <Topic>Sobre mim</Topic>
 
       <Text>
-        Com mais de 3 anos de experiência em desenvolvimento de web, sou
-        apaixonado por criar soluções robustas, escaláveis e acima de tudo,
-        resolver problemas. Desenvolvi e fiz parte de projetos que envolviam
-        desde UI até banco de dados.
+        Profissional com mais de 5 anos de experiência em desenvolvimento
+        de software e bacharelado em ciências da computação, sou apaixonado por
+        criar soluções robustas e escaláveis que resolvem problemas reais.
       </Text>
     </motion.div>
   );
