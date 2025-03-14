@@ -49,3 +49,22 @@
   font-family: "Dancing Script", serif;
   color: var(--warning-color);
 }
+
+@media screen and (max-width: 800px) {
+  .presentation {
+    width: 50%;
+  }
+
+  .presentation__title {
+    font-size: 1.6em;
+  }
+
+  .presentation__subtitle {
+    border: none;
+    margin: 0;
+  }
+
+  .presentation__subtitle span {
+    font-size: 1.3em;
+  }
+}

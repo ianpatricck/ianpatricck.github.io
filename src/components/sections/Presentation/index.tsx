@@ -53,3 +53,57 @@ export default function Presentation() {
     </motion.div>
   );
 }
+
+/*
+ *  Componente de apresentação em dispositivos menores
+ *
+ *  Exibe a primeira informação sobre o autor para telas
+ *  de menor largura.
+ *
+ */
+
+export function PresentationMobile() {
+  return (
+    <motion.div
+      className={Style.presentation}
+      initial={{
+        y: -100,
+        opacity: 0,
+      }}
+      animate={{
+        y: 0,
+        transition: {
+          duration: 0.4,
+          ease: "easeInOut",
+        },
+      }}
+      whileInView={{ opacity: 1 }}
+    >
+      <h1 className={Style.presentation__title}>
+        Olá, meu nome é <br />
+        <b>Ian Patrick.</b>
+      </h1>
+      <motion.h2
+        className={Style.presentation__subtitle}
+        initial={{
+          x: 100,
+          opacity: 0,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 0.3,
+            ease: "easeIn",
+          },
+        }}
+      >
+        <span>
+          <b>&lt;</b>
+          Sou mais um pedreiro de código
+          <b>/&gt;</b>
+        </span>
+      </motion.h2>
+    </motion.div>
+  );
+}
