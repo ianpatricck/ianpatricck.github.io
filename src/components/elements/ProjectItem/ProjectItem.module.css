@@ -2,7 +2,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   cursor: pointer;
   border-radius: 0.5em;
   margin-top: 2em;
@@ -21,4 +21,9 @@
 .project_body p {
   margin-top: 1em;
   font-family: "Roboto Light";
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
