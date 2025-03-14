@@ -21,9 +21,14 @@
 .project_body p {
   margin-top: 1em;
   font-family: "Roboto Light";
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+}
+
+@media screen and (max-width: 1400px) {
+  .project_body p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
 }
