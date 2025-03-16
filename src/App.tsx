@@ -7,11 +7,13 @@ import Menu from "./layouts/Menu";
 import { motion } from "motion/react";
 import Modal from "./layouts/Modal";
 import { useModal } from "./context/ModalContext";
+import { useScreenDimensions } from "./hooks/useScreenDimensions";
+import Mobile from "./layouts/Mobile/Mobile";
 
 /*
  *  Componente de carregamento
  *
- *  Exibe um simples elemente sinalizando que os componentes estão
+ *  Exibe um simples elemento sinalizando que os componentes estão
  *  carregando.
  *
  */
@@ -38,17 +40,26 @@ function AppLoading() {
 
 export default function App() {
   const { isOpen } = useModal();
+  const [width] = useScreenDimensions();
 
   return (
     <div className={AppModule.wrapper}>
       <Suspense fallback={<AppLoading />}>
         {isOpen ? <Modal /> : null}
 
-        <Sidebar />
-        <Menu />
-        <Canvas>
-          <Scene />
-        </Canvas>
+        {width <= 850 ? (
+          <>
+            <Mobile />
+          </>
+        ) : (
+          <>
+            <Sidebar />
+            <Menu />
+            <Canvas>
+              <Scene />
+            </Canvas>
+          </>
+        )}
       </Suspense>
     </div>
   );
