@@ -10,11 +10,12 @@
   padding: 0.5em;
   background-color: var(--foreground-color);
   border-radius: 0.25em;
+  align-items: center;
 }
 
 .contact_item:hover {
   scale: 1.01;
-  transition-duration: .2s;
+  transition-duration: 0.2s;
 }
 
 .contact_item img {
@@ -30,4 +31,19 @@
 
 .contact_item a:hover {
   color: var(--warning-color);
+}
+
+@media screen and (max-width: 410px) {
+  .contact_links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact_item {
+    font-size: 0.7em;
+  }
+
+  .contact_item__text {
+    overflow-wrap: anywhere;
+  }
 }
