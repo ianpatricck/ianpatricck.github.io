@@ -27,7 +27,8 @@ export default function Articles() {
       }}
     >
       <Topic>Artigos</Topic>
-      <div className={Style.articles_container}>
+
+      <div>
         {items.map((article, key) => (
           <motion.div
             key={key}
