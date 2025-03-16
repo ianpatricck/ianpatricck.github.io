@@ -32,3 +32,24 @@
     -webkit-line-clamp: 4;
   }
 }
+
+@media screen and (max-width: 850px) {
+  .project {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .project {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .project {
+    width: 200px;
+    height: 100px;
+  }
+}
