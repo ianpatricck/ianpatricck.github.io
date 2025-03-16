@@ -105,7 +105,7 @@ export default function Projects() {
     >
       <Topic>Trabalhos</Topic>
 
-      <section className={Style.projects_wrapper}>
+      <section className={Style.projects_items}>
         <ProjectCard
           background="/images/vanguarda.png"
           image="/images/cover-vanguarda.svg"
