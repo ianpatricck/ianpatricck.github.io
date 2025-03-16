@@ -11,3 +11,17 @@
   font-family: "Roboto Bold";
 }
 
+@media screen and (max-width: 850px) {
+  .topic {
+    text-align: center;
+  }
+
+  .topic b {
+    display: none;
+  }
+
+  .topic span {
+    text-decoration: underline;
+    text-decoration-color: var(--warning-color);
+  }
+}
