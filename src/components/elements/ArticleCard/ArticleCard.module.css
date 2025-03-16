@@ -28,7 +28,31 @@
 .card__from {
   margin: 0.5em;
   color: var(--gray-color);
-  font-size: .95em;
+  font-size: 0.95em;
   font-family: "Roboto Light";
   font-style: italic;
+}
+
+@media screen and (max-width: 450px) {
+  .card__image {
+    height: 70px;
+  }
+
+  .card__title {
+    font-size: 0.8em;
+  }
+
+  .card__from {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card__image {
+    height: 60px;
+  }
+
+  .card__title {
+    font-size: 0.7em;
+  }
 }
