@@ -52,3 +52,35 @@
 .modal__background {
   width: 100%;
 }
+
+@media screen and (max-width: 550px) {
+  .modal__item header {
+    display: flex;
+    position: sticky;
+  }
+
+  .modal__link {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .modal__item header {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .modal__link {
+    font-size: 0.7em;
+    padding: 0.4em;
+    padding-left: 1em;
+  }
+
+  .modal__link img {
+    height: 20px;
+  }
+}
