@@ -5,12 +5,6 @@
 
 @media screen and (max-width: 850px) {
   .about {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .about {
     width: 100%;
   }
 }
