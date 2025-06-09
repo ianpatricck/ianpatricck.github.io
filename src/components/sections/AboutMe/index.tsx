@@ -29,7 +29,7 @@ export default function AboutMe() {
       <Topic>Sobre mim</Topic>
 
       <Text>
-        Profissional com mais de 5 anos de experiência em desenvolvimento
+        Com +5 anos de experiência em desenvolvimento
         de software e bacharelado em ciências da computação, sou apaixonado por
         criar soluções robustas e escaláveis que resolvem problemas reais.
       </Text>

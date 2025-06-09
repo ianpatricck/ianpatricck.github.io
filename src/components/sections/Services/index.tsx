@@ -34,18 +34,26 @@ export default function Services() {
       <section className={Style.services_wrapper}>
         <div className={Style.services_wrapper__card}>
           <img src="/images/frontend.svg" alt="Front-End" />
-          <p>Desenvolvimento Front-End</p>
+          <p>
+            Desenvolvimento
+            <br />
+            Front-End
+          </p>
         </div>
 
         <div className={Style.services_wrapper__card}>
           <img src="/images/backend.svg" alt="Back-End" />
-          <p>Desenvolvimento Back-End</p>
+          <p>
+            Desenvolvimento
+            <br />
+            Back-End
+          </p>
         </div>
 
-        <div className={Style.services_wrapper__card}>
+        {/*<div className={Style.services_wrapper__card}>
           <img src="/images/mobile.svg" alt="Mobile" />
           <p>Desenvolvimento Mobile</p>
-        </div>
+        </div>*/}
       </section>
 
       <Text>
@@ -80,17 +88,6 @@ export default function Services() {
         dos anos, aprimorei minhas habilidades em trabalhar com APIs, integração
         entre Front-End e Back-End, e práticas modernas de desenvolvimento,
         sempre prezando pela performance e usabilidade.
-      </Text>
-
-      <br />
-
-      <Text>
-        Além de minha experiência com desenvolvimento web, também sou
-        especializado em desenvolvimento mobile utilizando{" "}
-        <Link href="https://reactnative.dev/">React Native</Link>. Com essa
-        ferramenta, sou capaz de criar aplicativos nativos para iOS e Android
-        com uma única base de código, oferecendo uma excelente performance e uma
-        experiência de usuário impecável.
       </Text>
     </motion.div>
   );
