@@ -19,7 +19,6 @@
 
 .menu__item img:hover {
   box-shadow: -4px 4px 0 var(--secondary-color);
-  border-radius: 0.1em;
   scale: 1.05;
   transition-duration: 0.2s;
 }
