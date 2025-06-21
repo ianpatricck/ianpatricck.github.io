@@ -1,18 +1,19 @@
 @import "./fonts.css";
 
 :root {
-  --background-color: #0c0c0c;
-  --foreground-color: #050505;
-  --primary-color: #ff5733;
-  --secondary-color: #ff7153;
-  --warning-color: #ffe126;
-  --gray-color: #c1c1c1;
-  --text-color: #ffffff;
+    --background-color: #0c0c0c;
+    --foreground-color: #050505;
+    --dark-color: #1c1f1f;
+    --primary-color: #ff5733;
+    --secondary-color: #ff7153;
+    --warning-color: #ffe126;
+    --gray-color: #c1c1c1;
+    --text-color: #ffffff;
 }
 
 body {
-  height: 100%;
-  overflow: hidden;
+    height: 100%;
+    overflow: hidden;
 }
 
 h1,
@@ -26,7 +27,8 @@ span,
 small,
 label,
 b,
-i {
-  color: var(--text-color);
-  font-family: "Roboto";
+i,
+li {
+    color: var(--text-color);
+    font-family: "Roboto";
 }
