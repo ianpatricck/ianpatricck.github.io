@@ -1,11 +1,17 @@
 .sidebar {
-  background-color: var(--background-color);
-  z-index: 1;
-  position: absolute;
-  width: 35vw;
-  height: 100vh;
-  padding: 2em;
-  overflow-y: scroll;
-  scrollbar-color: var(--warning-color) var(--background-color);
-  scrollbar-width: thin;
+    background: var(--background-color);
+    background: linear-gradient(
+        90deg,
+        var(--dark-color) 9%,
+        var(--background-color) 72%
+    );
+
+    z-index: 1;
+    position: absolute;
+    width: 35vw;
+    height: 100vh;
+    padding: 2em;
+    overflow-y: scroll;
+    scrollbar-color: var(--warning-color) var(--background-color);
+    scrollbar-width: thin;
 }

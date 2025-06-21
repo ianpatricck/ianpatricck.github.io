@@ -3,7 +3,7 @@ import MobileModule from "./Mobile.module.css";
 import { PresentationMobile } from "../../components/sections/Presentation";
 import AboutMe from "../../components/sections/AboutMe";
 import Services from "../../components/sections/Services";
-import Projects from "../../components/sections/Projects";
+import Experience from "../../components/sections/Experience";
 import Techs from "../../components/sections/Techs";
 import Articles from "../../components/sections/Articles";
 import Contact from "../../components/sections/Contact";
@@ -21,7 +21,7 @@ export default function Mobile() {
       <PresentationMobile />
       <AboutMe />
       <Services />
-      <Projects />
+      <Experience />
       <Techs />
       <Articles />
       <Contact />
