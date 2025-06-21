@@ -5,8 +5,6 @@ import Scene from "./3d/Scene";
 import Sidebar from "./layouts/Sidebar";
 import Menu from "./layouts/Menu";
 import { motion } from "motion/react";
-import Modal from "./layouts/Modal";
-import { useModal } from "./context/ModalContext";
 import { useScreenDimensions } from "./hooks/useScreenDimensions";
 import Mobile from "./layouts/Mobile/Mobile";
 
@@ -39,14 +37,11 @@ function AppLoading() {
  */
 
 export default function App() {
-  const { isOpen } = useModal();
   const [width] = useScreenDimensions();
 
   return (
     <div className={AppModule.wrapper}>
       <Suspense fallback={<AppLoading />}>
-        {isOpen ? <Modal /> : null}
-
         {width <= 850 ? (
           <>
             <Mobile />
