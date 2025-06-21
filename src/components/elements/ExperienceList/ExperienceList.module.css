@@ -1,0 +1,41 @@
+.experience_list {
+    margin-bottom: 1.4em;
+    border-left: 2px dotted var(--gray-color);
+    padding-left: 0.8em;
+
+    .header {
+        margin-bottom: 0.8em;
+
+        .title {
+            font-size: 12pt;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        .duration {
+            font-size: 10pt;
+            color: var(--gray-color);
+        }
+    }
+
+    .company {
+        font-size: 11pt;
+        color: var(--warning-color);
+    }
+
+    .tasks {
+        list-style: outside;
+        margin-top: 0.7em;
+        padding-left: 1.5em;
+
+        li {
+            color: var(--text-color);
+            margin-top: 0.3em;
+            font-size: 11pt;
+        }
+
+        li::marker {
+            color: var(--secondary-color);
+        }
+    }
+}
